@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Exercise</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form class="" action="index.html" method="post">
+      <div class="">
+        <label for="f_name">First Name:</label>
+        <input type="text" name="" id="f_name" value="" placeholder="John" required>
+
+        <label for="l_name">Last Name:</label>
+        <input type="text" name="" value="" id="l_name" placeholder="Smith" required>
+      </div>
+
+      <label for="male">Male</label>
+      <input type="radio" name="genderChoice" value="male" id="male">
+      <label for="female">Female</label>
+      <input type="radio" name="genderChoice" value="female" id="female">
+      <label for="other">Other</label>
+      <input type="radio" name="genderChoice" value="other" id="other">
+
+      <div class="">
+        <label for="email">Email:</label>
+        <input type="email" name="" value="" id="email" placeholder="your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="" value="" id="password" minlength="5" maxlength="10">
+      </div>
+
+      <div class="">
+        <label for="birthday">Birthday:</label>
+        <select class="" name="" id="birthday">
+          <option value="">Month</option>
+          <option value="">January</option>
+          <option value="">February</option>
+          <option value="">March</option>
+        </select>
+        <select class="" name="">
+          <option value="">Day</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <select class="" name="">
+          <option value="">Year</option>
+          <option value="">1984</option>
+          <option value="">1985</option>
+          <option value="">1986</option>
+        </select>
+      </div>
+
+      <div class="">
+        <label for="checkbox">I agree to the terms and conditions</label>
+        <input type="checkbox" name="" value="" id="checkbox">
+      </div>
+      
+      <button type="submit" name="button">Submit</button>
+    </form>
+  </body>
+</html>
