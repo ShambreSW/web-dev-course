@@ -6,58 +6,62 @@
   </head>
   <body>
     <h1>Register</h1>
-    <form class="" action="index.html" method="post">
+    <form>
+    <!-- Don't use these if you want to see query string. <form class="" action="index.html" method="post"> -->
       <div class="">
         <label for="f_name">First Name:</label>
-        <input type="text" name="" id="f_name" value="" placeholder="John" required>
+        <input type="text" name="first" id="f_name" value="" placeholder="John" required>
 
         <label for="l_name">Last Name:</label>
-        <input type="text" name="" value="" id="l_name" placeholder="Smith" required>
+        <input type="text" name="last" value="" id="l_name" placeholder="Smith" required>
       </div>
 
-      <label for="male">Male</label>
-      <input type="radio" name="genderChoice" value="male" id="male">
-      <label for="female">Female</label>
-      <input type="radio" name="genderChoice" value="female" id="female">
-      <label for="other">Other</label>
-      <input type="radio" name="genderChoice" value="other" id="other">
+      <div class="">
+        <label for="male">Male</label>
+        <input type="radio" name="genderChoice" value="male" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="genderChoice" value="female" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="genderChoice" value="other" id="other">
+      </div>
 
       <div class="">
         <label for="email">Email:</label>
-        <input type="email" name="" value="" id="email" placeholder="your email" required>
+        <input type="email" name="email" value="" id="email" placeholder="your email" required>
 
         <label for="password">Password:</label>
-        <input type="password" name="" value="" id="password" minlength="5" maxlength="10">
+        <input type="password" name="password" value="" id="password" pattern=".{5,10}" required title="Please enter 5 to 10 characters">
+        <!-- Do not use: minlength="5" maxlength="10"> -->
       </div>
 
       <div class="">
         <label for="birthday">Birthday:</label>
-        <select class="" name="" id="birthday">
-          <option value="">Month</option>
-          <option value="">January</option>
-          <option value="">February</option>
-          <option value="">March</option>
+        <select class="" name="month" id="birthday">
+          <option value="0" selected disabled>Month</option>
+          <option value="january">January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
         </select>
-        <select class="" name="">
-          <option value="">Day</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
+        <select class="" name="birthday-day" id="day">
+          <option value="0" selected disabled>Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
         </select>
-        <select class="" name="">
-          <option value="">Year</option>
-          <option value="">1984</option>
-          <option value="">1985</option>
-          <option value="">1986</option>
+        <select class="" name="birthday-year" id="year">
+          <option value="0" selected disabled>Year</option>
+          <option value="1984">1984</option>
+          <option value="1985">1985</option>
+          <option value="1986">1986</option>
         </select>
       </div>
 
       <div class="">
         <label for="checkbox">I agree to the terms and conditions</label>
-        <input type="checkbox" name="" value="" id="checkbox">
+        <input type="checkbox" name="agree" value="" id="checkbox">
       </div>
-      
-      <button type="submit" name="button">Submit</button>
+
+      <button type="submit" name="button" value="submit">Submit</button>
     </form>
   </body>
 </html>
