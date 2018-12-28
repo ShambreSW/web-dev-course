@@ -21,4 +21,5 @@ body {
 
 img {
   min-height: 233.33px;
+  max-height: 233.33px;
 }
