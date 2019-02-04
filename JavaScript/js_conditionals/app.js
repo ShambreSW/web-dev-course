@@ -1,3 +1,6 @@
+//Solution video uses prompt specifically.  I figured I'd need this, but it didn't say how they wanted to see it done, so I was just working in this file and refreshing the page after using different arguments in the funtion call.  It looks like I way overcomplicated it by assuming I had to use if else statements.  The solution just has 4 if statements.
+
+var age = Number(prompt("Please enter your age"));
 
 function yourAgeSaysThis(age) {
   if (age > 0 && age%2 == 1) {
@@ -33,4 +36,4 @@ function yourAgeSaysThis(age) {
   }
 }
 
-yourAgeSaysThis(21);
+yourAgeSaysThis(age);
